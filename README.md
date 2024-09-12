@@ -21,7 +21,7 @@ It is difficult to persist data files in Google Colab. As such, we decided to us
 
 ### 'train_epoch'
 The 'train_epoch' function trains and updates the parameters of the model for one epoch.
-It performs one forward pass and backpropogation to update the weights using the specified optimizer
+It performs one forward pass and backpropagation to update the weights using the specified optimizer
 (SGD or Adam is what we use in this project). The function returns the loss and accuracy of the training epoch
 
 ### 'evaluate'
@@ -37,7 +37,7 @@ The 'tune_hyperparameters' function performs a brute-force grid-search through a
 * learning_rates=[0.1, 0.01, 0.001]
 * optimizers=['SGD', 'Adam']
 
-These default values leave us with 18 tuning iterations by default. It is recommended to connect to a GPU for this computationally difficult task. This function also has arguments 'dropout_rates' and 'weight_decay_weights' which defualt to 'None' but can take a list of floats to add to the hyperparameter grid-search. Importantly this function handles the deactivation of dropout for model evaluation. 
+These default values leave us with 18 tuning iterations by default. It is recommended to connect to a GPU for this computationally difficult task. This function also has arguments 'dropout_rates' and 'weight_decay_weights' which default to 'None' but can take a list of floats to add to the hyperparameter grid-search. Importantly this function handles the deactivation of dropout for model evaluation. 
 &nbsp;
 This function uses the above three functions defined in order to track a champion (optimal) model based on validation accuracy. The function creates an accuracy plot for the best model and returns a champion model along with champion parameters and the highest training accuracy.
 &nbsp;
@@ -109,7 +109,7 @@ Each technique yielded test accuracies between 89% and 90% after the model with 
 * 'dropout_rate': 0.2
 * 'weight_decay': 0.0
 
-Interestingly, we find the best model has the lowest of all of our included dropout rates (0.2). The dropout regularization technique works by decreasing reliance on specific weights in training so that the model can generalize better. We see here that thus model generalizes the best when encountering new data. 
+Interestingly, we find the best model has the lowest of all of our included dropout rates (0.2). The dropout regularization technique works by decreasing reliance on specific weights in training so that the model can generalize better. We see here that this model generalizes the best when encountering new data. 
 
 &nbsp;
 
