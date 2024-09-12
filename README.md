@@ -30,16 +30,32 @@ with different regularization techniques.
 ## Results
 
 ### Base Model (No Regularization)
+Final Test Accuracy: 89.05
+![base_epoch_acc](https://github.com/user-attachments/assets/ec9b8aa5-6439-4516-96d4-682f1167c220)
 
 ### Dropout Regularization
+Final Test Accuracy: 89.92
+![dropout_eval_acc](https://github.com/user-attachments/assets/a0fc64b0-23cb-4755-a452-040f9aa2b69b)
 
 ### Batch Normalization 
+Final Test Accuracy: 89.72
+![batchnorm_eval_acc](https://github.com/user-attachments/assets/3d53aa23-07c5-4899-9481-b6213cee4348)
+
 
 ### Weight Decay (l2 regularization)
+Final Test Accuracy: 89.40
+![weightdecay_eval_acc](https://github.com/user-attachments/assets/d0d48c22-55f9-47f2-b6ab-e900a9d1e953)
+![weightdecay_eval_acc](https://github.com/user-attachments/assets/d0d48c22-55f9-47f2-b6ab-e900a9d1e953)
 
 ### Final Results
 
-[INSERT ACC TABLE]
+Training and Testing Accuracies:
+                      Model  Training Accuracy (%)  Testing Accuracy (%)
+0           Without Dropout              91.480000                 89.05
+1              With Dropout              91.014545                 89.92
+2  With Batch Normalization              92.432727                 89.72
+3         With Weight Decay              91.892727                 89.40
+
 
 
 
