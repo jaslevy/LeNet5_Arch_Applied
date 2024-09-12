@@ -117,5 +117,5 @@ Another notable result is that the non-regularized model (the base model) had th
 
 &nbsp;
 
-Though the differences of results regularization techniques is small, these differences could mean a lot when it comes to a high-stakes image classification task. More importantly, what we don't see here is the use of multiple regularization techniques together. All in all, this analysis shows the benefits of regularization through the results. Regularization should certainly be used to maximize test accuracy when using Convolutional Neural Networks for image classification.
+Though the differing results of regularization techniques is small, these differences could mean a lot when it comes to a high-stakes image classification task. More importantly, what we don't see here is the use of multiple regularization techniques together. All in all, this analysis shows the benefits of regularization through the results. Regularization should certainly be used to maximize test accuracy when using Convolutional Neural Networks for image classification.
 
