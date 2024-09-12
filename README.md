@@ -101,4 +101,21 @@ Final Test Accuracy: **89.40**
 
 ## Conclusion & Discussion
 
-Information about the project's license.
+Each technique yielded test accuracies between 89% and 90% after the model with optimal hyperparameters was trained. The model with the highest accuracy on onseen test data was the dropout model with the following hyperparameters:
+
+* 'batch_size': 32 '
+* learning_rate': 0.001
+* 'optimizer': 'Adam'
+* 'dropout_rate': 0.2
+* 'weight_decay': 0.0
+
+Interestingly, we find the best model has the lowest of all of our included dropout rates (0.2). The dropout regularization technique works by decreasing reliance on specific weights in training so that the model can generalize better. We see here that thus model generalizes the best when encountering new data. 
+
+&nbsp;
+
+Another notable result is that the non-regularized model (the base model) had the lowest of all test accuracies. This is to be expected, for without regularization, the model will not generalize to test-data as well. 
+
+&nbsp;
+
+Though the differences of results regularization techniques is small, these differences could mean a lot when it comes to a high-stakes image classification task. More importantly, what we don't see here is the use of multiple regularization techniques together. All in all, this analysis shows the benefits of regularization through the results. Regularization should certainly be used to maximize test accuracy when using Convolutional Neural Networks for image classification.
+
